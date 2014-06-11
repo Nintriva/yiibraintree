@@ -10,9 +10,9 @@ Installation
 
 step1:Extract the file into your components directory step2:Update your components section in config/main.php eg:
 
-<code>
+<pre>
 'braintree' => array(
-                                        'class'=>'application.components.braintree.YiiBraintree',
+                                     'class'=>'application.components.braintree.YiiBraintree',
  
                                       'ENV' => 'sandbox',//sandbox or production
  
@@ -28,10 +28,10 @@ step1:Extract the file into your components directory step2:Update your componen
  
  
                                       ),
- </code>
+ </pre>
 
 Usage
-<code>
+<pre>
 $data=array(
                 'amount' => '10.50',
                 'merchantAccountId' => Yii::app()->braintree->MERCHANT_ACCOUNT_ID,
@@ -42,4 +42,4 @@ $data=array(
                              )
                );
    $r=Yii::app()->braintree->sale($data);
-  </code>
+  </pre>
