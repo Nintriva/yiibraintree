@@ -3,14 +3,17 @@ yiibraintree
 
 Yiibraintree is a Yii framework extension for Simplifying Integration of  Braintree payment Solution into your ecommerce apps.
 
-Requirements
-
+<h3>Requirements</h3>
 Yii 1.1 or above
-Installation
 
-step1:Extract the file into your components directory step2:Update your components section in config/main.php eg:
+<h3>Installation</h3>
+
+step1:Extract the file into your components directory step2:Update your components section in config/main.php 
+
+step2:
 
 <pre>
+
 'braintree' => array(
                                      'class'=>'application.components.braintree.YiiBraintree',
  
@@ -30,7 +33,7 @@ step1:Extract the file into your components directory step2:Update your componen
                                       ),
  </pre>
 
-Usage
+<h3>Usage</h3>
 <pre>
 $data=array(
                 'amount' => '10.50',
